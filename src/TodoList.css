@@ -1,0 +1,86 @@
+.todoListHeader{
+  background: transparent url(./bg-header.jpg) no-repeat 0 0;
+  background-size: 100%;
+  padding: 80px 20px 30px;
+}
+
+.todoListHeader h1{ 
+  color: #FFF;
+  font-size: 2.6rem;
+}
+
+.todoListHeader span{
+  color: #FFF;
+  font-size: 1.4rem;
+} 
+
+.todoListMain{
+  padding: 30px 20px 0 20px;
+  border: 1px solid #ebedef;
+
+}
+
+.todoListMain .header{
+  margin-bottom: 20px;
+}
+
+
+.todoListMain .header input {
+  padding: 10px;
+  font-size: 16px;
+  width: 275px;
+}
+
+.todoListMain .header button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: #44048c;
+  color: #FFF;
+  border: 2px solid #44048c;
+}
+
+.todoListMain .header button:hover {
+  background-color: #6814c6;
+  border: 2px solid #6814c6;
+  cursor: pointer;
+}
+
+.todoListMain .theList {
+  list-style: none;
+  padding-left: 0;
+} 
+
+ul.theList {
+  padding: 0;
+}
+
+.todoListMain .theList li {
+    background-color: rgba(255,255,255,.5);
+    padding: 15px;
+    margin-bottom: 15px; 
+    list-style: none;
+    transition: background-color .2s ease-out;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.todoListMain .theList li span{
+  position: absolute;
+  right: 10px;
+  opacity: 0;
+}
+
+.todoListMain .theList li:hover span{
+  position: absolute;
+  right: 10px;
+  opacity: 1;
+}
+
+
+   
+.todoListMain .theList li:hover {
+    background-color: #ebedef;
+    cursor: pointer; 
+}
