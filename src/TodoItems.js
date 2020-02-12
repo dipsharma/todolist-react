@@ -9,25 +9,16 @@ constructor (props){
     delete(key){
         this.props.delete(key);
     }
+
     createTask(item){
-        return <li onClick = {()=>this.delete(item.key)}
-        key = {item.key}>
-        <form>
-        <label>
-          <input
-            name="isGoing"
-            type="checkbox"
-            />
-        </label>
-        </form>
+        return <li key={item.key} >
         
         {item.text} 
 
-
-        <span><i className="fa fa-trash"></i></span>
+        <span onClick = {()=>this.delete(item.key)}
+        key = {item.key}><i className="fa fa-trash"></i></span>
         </li>   
     }
-
 
     render (){
         var todoEntries = this.props.entries;
